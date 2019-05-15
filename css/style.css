@@ -31,7 +31,7 @@ header{
 header .gnb{
     position:absolute;
     top:25px;
-    left:210px;
+    left:200px;
 }
 header .gnb:after{
     content:'';
@@ -111,7 +111,7 @@ header .search input{
     margin:0 auto;
     color:white;
     text-align:center;
-    padding-top:40px;
+    padding-top:80px;
 }
 
 .main_con h2{
@@ -127,8 +127,8 @@ header .search input{
 .main_con .mainsearch {
     display:block;
     background-color:rgba(0,0,0,0.65);
-    width:600px;
-    height: 150px;
+    width:640px;
+    height: 138px;
     margin: 0 auto;
     margin-top:60px;
     
@@ -138,7 +138,7 @@ header .search input{
 }
 
 .main_con .mainsearch .input_wrap{
-    width:530px;
+    width:600px;
     margin: 0 auto;
 }
 
@@ -167,13 +167,15 @@ header .search input{
 }
 
 .main_con .mainsearch input{
-    width:530px;
+    width:600px;
     height: 50px;
     background-image: url(../images/icon_search1.gif);
     background-repeat:no-repeat;
     background-position:right;
     margin-top:15px;
-    margin-bottom:20px;
+    margin-bottom:10px;
+    padding-left:10px;
+    box-sizing: border-box;
 }
 
 .main_con .mainsearch .city a:hover{
@@ -192,7 +194,7 @@ header .search input{
 }
 content h3 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-size:26px;
     color:#333;
 }
@@ -275,6 +277,7 @@ content h3 {
 .con2 .plan .item{
     margin-bottom:35px;
     width:346px;
+    height: 295px;
 
 }
 
@@ -282,7 +285,12 @@ content h3 {
 .con2 .plan_wrap .plan .item img{
     width:100%;
     height: 100%;
-    transition: all 0.8s;
+    transition: all 2s;
+}
+
+.con2 .item img:hover{
+    transform:scale(1.2)
+    
 }
 
 .con2 .plan .item .plan_image{
@@ -332,7 +340,7 @@ content h3 {
     background-color:white;
     border: 1px solid #ddd;
     padding-right:10px;
-    padding-left:10px;
+    padding-left:15px;
     padding-top:15px;
     padding-bottom:10px;
     font-size: 14px;
@@ -390,13 +398,11 @@ content h3 {
 .con2 .plan .item .plan_inform .user{
     padding-left:20px;
     background-image: url(../images/icon_user.png);
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
+    background-position-y: center; 
 }
 
-.con2 .item img:hover{
-    transform:scale(1.5)
-    
-}
+
 
 .all{
     width:345px;
@@ -415,7 +421,7 @@ content h3 {
 .con3_wrap{
     width:1092px;
     margin: 0 auto;
-    padding-top:80px;
+    padding-top:70px;
     padding-bottom:80px;
 }
 
@@ -508,7 +514,7 @@ content h3 {
 }
 
 .trip_img img{
-    transition:all 0.5s;
+    transition:all 1s;
 }
 
 .trip_img img:hover{
@@ -531,6 +537,8 @@ content h3 {
     font-size:14px;
 }
 
+
+
 /*con3*/
 
 .con4{
@@ -540,8 +548,8 @@ content h3 {
 .con4 .con4_wrap{
     width:1092px;
     margin: 0 auto;
-    padding-top:50px;
-    padding-bottom:50px;
+    padding-top:70px;
+    padding-bottom:90px;
     
 }
 
@@ -617,6 +625,7 @@ content h3 {
 .con5{
     background-image: url(../images/mobile_bg.png);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .con5_wrap{
@@ -628,17 +637,22 @@ content h3 {
 
 .mobile_img{
     width:542px;
-    height:320px;
+    height:340px;
     background-image:url(../images/mobile_demo.png);
     background-repeat:no-repeat;
     background-position-y: 0;
+    background-position-x: 40px;
 }
 
 
 .mobile_txt{
     position: absolute;
-    top:70px;
-    left:520px;
+    top:80px;
+    left:550px;
+}
+
+.mobile_txt .app{
+    margin-top:40px;
 }
 .mobile_txt .app:after{
     display: block;
@@ -647,12 +661,14 @@ content h3 {
 }
 .mobile_txt .app li{
     float:left;
-    margin-top:20px;
-    margin-right:10px;
+    
+    margin-right:5px;
 }
 
 .mobile_txt p{
     color:#666;
+    font-size:14px;
+    
 }
 
 .mobile_txt .blue{
@@ -671,18 +687,21 @@ footer{
     width:1092px;
     margin: 0 auto;
     padding-top:25px;
+    padding-bottom:10px;
 }
 footer .foot_tit{
     color:#ccc;
     border-bottom: 1px solid #424753;
     font-size:14px;
-    margin-bottom: 15px
+    margin-bottom: 10px;
+    padding-bottom:5px;
 }
 
 footer ul .foot_menu{
     float:left;
     width:260px;
     font-size:12px;
+    margin-right:10px;
     
 }
 
@@ -697,7 +716,7 @@ footer ul:after{
 }
 
 .foot_in li{
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 
 .foot_lang:after{
@@ -707,7 +726,7 @@ footer ul:after{
 }
 .foot_lang{
     color:white;
-    margin-top:30px;
+    margin-top:24px;
 }
 
 .foot_lang p{
@@ -727,6 +746,15 @@ footer ul:after{
     margin-right:10px;
 }
 
+.foot_lang a{
+    display: block;
+    width:100%;
+    height:100%;
+
+}
+
+/*a 선택범위 넓혀줌*/
+
 .foot_sns:after{
     clear:both;
     content:'';
@@ -738,6 +766,7 @@ footer ul:after{
     margin-right:10px;
     margin-top:20px;
 }
+
 
 .copy{
     background-color:gold;
